@@ -56,7 +56,11 @@ window.onfiboxTranslations = {
     "title": "onFiBOX | نصب اپلیکیشن",
     "meta": "دانلود اپلیکیشن onFiBOX برای اندروید و ویندوز و راهنمای اتصال به تلویزیون؛ نسخه‌های LG و Samsung به‌زودی منتشر می‌شوند.",
     "region": "فیلم و سریال برای کاربران ایران ارائه می‌شود. انتخاب زبان، منطقهٔ دسترسی شما را تغییر نمی‌دهد.",
-    "language": "English / فارسی"
+    "language": "English / فارسی",
+    "androidModalTitle": "دانلود اپلیکیشن اندروید",
+    "vpnTitle": "VPN را خاموش کنید",
+    "vpnDescription": "پیش از دانلود و استفاده از اپلیکیشن، VPN یا فیلترشکن دستگاه را خاموش کنید.",
+    "androidConfirmDownload": "دانلود اپلیکیشن اندروید"
   },
   "en": {
     "skip": "Skip to downloads",
@@ -114,6 +118,10 @@ window.onfiboxTranslations = {
     "title": "onFiBOX | Cast from your phone to your TV",
     "meta": "Download onFiBOX and connect your Android phone to your TV. Get the apps and follow the device pairing guide.",
     "region": "",
-    "language": "English / فارسی"
+    "language": "English / فارسی",
+    "androidModalTitle": "Download for Android",
+    "vpnTitle": "Turn off your VPN",
+    "vpnDescription": "Turn off your VPN before downloading and using the app.",
+    "androidConfirmDownload": "Download for Android"
   }
 };

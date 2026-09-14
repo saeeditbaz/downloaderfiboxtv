@@ -9,8 +9,8 @@
     <link rel="icon" type="image/svg+xml" href="./images/onfibox/favicon.svg">
     <link rel="preload" href="./assets/fonts/Vazirmatn.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./assets/libs/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/onfibox-download.css?v=20260914-original-photo">
-    <link rel="stylesheet" href="./assets/css/languages.css?v=20260914-original-photo">
+    <link rel="stylesheet" href="./assets/css/onfibox-download.css?v=20260914-download-modal1">
+    <link rel="stylesheet" href="./assets/css/languages.css?v=20260914-download-modal1">
     <script>document.documentElement.classList.add("language-pending");</script>
 </head>
 <body>
@@ -70,7 +70,7 @@
                         <p data-i18n="androidDescription">تماشای فیلم و سریال و مدیریت دستگاه‌ها</p>
                     </div>
                     <div class="download-actions">
-                        <a href="https://fiboxtv.top/downloads/onfibox.apk" class="action action-primary" download><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-download"></use></svg> <span data-i18n="androidDownload">دانلود اندروید</span></a>
+                        <a href="https://fiboxtv.top/downloads/onfibox.apk" class="action action-primary" id="android-download-trigger" data-bs-toggle="modal" data-bs-target="#androidDownloadModal" aria-haspopup="dialog" aria-controls="androidDownloadModal"><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-download"></use></svg> <span data-i18n="androidDownload">دانلود اندروید</span></a>
                     </div>
                 </article>
                 <article class="download-card" aria-labelledby="windows-title">
@@ -130,6 +130,27 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade download-confirm-modal" id="androidDownloadModal" tabindex="-1" aria-labelledby="androidDownloadTitle" aria-describedby="android-download-notice android-vpn-note" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="androidDownloadTitle" data-i18n="androidModalTitle">دانلود اپلیکیشن اندروید</h2>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="بستن" data-i18n-aria-label="close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="android-download-notice" data-i18n="region">فیلم و سریال برای کاربران ایران ارائه می‌شود. انتخاب زبان، منطقهٔ دسترسی شما را تغییر نمی‌دهد.</p>
+            <div class="vpn-reminder" id="android-vpn-note">
+              <strong data-i18n="vpnTitle">VPN را خاموش کنید</strong>
+              <p data-i18n="vpnDescription">پیش از دانلود و استفاده از اپلیکیشن، VPN یا فیلترشکن دستگاه را خاموش کنید.</p>
+            </div>
+            <a class="action action-primary android-confirm-download" href="https://fiboxtv.top/downloads/onfibox.apk" download>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-download"></use></svg>
+              <span data-i18n="androidConfirmDownload">دانلود اپلیکیشن اندروید</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="modal fade" id="globalHelpModal" tabindex="-1" aria-labelledby="globalHelpModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
       <div class="modal-content">
@@ -188,7 +209,7 @@
     </dialog>
     <noscript><p class="page-shell">برای انتخاب زبان، جاوااسکریپت مرورگر را فعال کنید. <span lang="en" dir="ltr">Enable JavaScript to choose English or Persian.</span></p></noscript>
     <script src="./assets/libs/js/bootstrap.bundle.min.js" defer></script>
-    <script src="./assets/js/translations.js?v=20260914-original-photo" defer></script>
-    <script src="./assets/js/site.js?v=20260914-original-photo" defer></script>
+    <script src="./assets/js/translations.js?v=20260914-download-modal1" defer></script>
+    <script src="./assets/js/site.js?v=20260914-download-modal1" defer></script>
 </body>
 </html>

@@ -1,4 +1,13 @@
 .language-pending #page-content { display: none; }
+.download-confirm-modal .modal-content { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 16px; }
+.download-confirm-modal .modal-header { border-color: var(--border); padding: 20px 24px; gap: 16px; }
+.download-confirm-modal .modal-title { font-size: 22px; font-weight: 750; line-height: 1.6; }
+.download-confirm-modal .btn-close { margin: 0; flex-shrink: 0; }
+.download-confirm-modal .modal-body { padding: 24px; line-height: 1.9; }
+.download-confirm-modal .vpn-reminder { background: #292619; border: 1px solid #635623; border-radius: 10px; padding: 16px; margin-block: 20px; }
+.download-confirm-modal .vpn-reminder strong { display: block; color: var(--accent); font-size: 19px; margin-bottom: 6px; }
+.download-confirm-modal .vpn-reminder p { margin: 0; color: var(--text); font-size: 14px; }
+.download-confirm-modal .android-confirm-download { width: 100%; min-height: 50px; white-space: normal; text-align: center; }
 .header-actions { display: flex; align-items: center; gap: 16px; }
 .language-trigger { background: transparent; color: var(--text); border: 1px solid var(--border); border-radius: 7px; padding: 8px 12px; min-height: 44px; white-space: nowrap; font-size: 14px; direction: ltr; }
 .language-trigger:hover { color: var(--accent); border-color: var(--accent); }
