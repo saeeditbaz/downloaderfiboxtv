@@ -6,6 +6,16 @@
     const dialog = document.getElementById('language-dialog');
     const changeButton = document.getElementById('change-language');
     let currentLanguage = null;
+    const previewVideo = document.querySelector('.tv-preview-video');
+    previewVideo.addEventListener('playing', () => previewVideo.classList.add('is-playing'));
+    previewVideo.addEventListener('error', () => previewVideo.classList.remove('is-playing'));
+
+    function startPreviewVideo() {
+        previewVideo.muted = true;
+        if (!previewVideo.getAttribute('src')) previewVideo.src = previewVideo.dataset.src;
+        // Preserve the static artwork if the browser declines autoplay.
+        previewVideo.play().catch(() => {});
+    }
 
     function isSupported(language) {
         return language === 'en' || language === 'fa';
@@ -31,6 +41,7 @@
         document.getElementById('copyright-year').textContent = String(new Date().getFullYear());
         currentLanguage = language;
         document.documentElement.classList.remove('language-pending');
+        startPreviewVideo();
     }
 
     function chooseLanguage(language) {

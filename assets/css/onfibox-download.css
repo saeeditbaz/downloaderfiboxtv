@@ -259,6 +259,35 @@ h3[dir=ltr],.wordmark {
     margin-inline:-26px -30px;
 }
 
+.device-preview {
+    position:relative;
+    width:100%;
+    max-width:675px;
+    margin-inline:auto;
+    aspect-ratio:3/2;
+}
+
+.device-preview picture {
+    display:block;
+}
+
+.tv-preview-video {
+    position:absolute;
+    left:15.625%;
+    top:13.28125%;
+    width:76.5625%;
+    height:67.3828125%;
+    object-fit:cover;
+    pointer-events:none;
+    opacity:0;
+    /* Keep the phone in front of the TV: coordinates follow the original artwork. */
+    clip-path:polygon(0 0,100% 0,100% 100%,5.44% 100%,5.44% 56.6%,5.1% 53.5%,4.4% 52%,3% 51.3%,0 51.3%);
+}
+
+.tv-preview-video.is-playing {
+    opacity:1;
+}
+
 .hero-art img {
     display:block;
     width:100%;
