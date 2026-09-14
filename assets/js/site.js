@@ -26,6 +26,7 @@
                 element.setAttribute(attribute, messages[element.getAttribute(`data-i18n-${attribute}`)]);
             });
         });
+        document.querySelector('.region-note').hidden = !messages.region;
         changeButton.setAttribute('aria-label', language === 'fa' ? 'تغییر زبان' : 'Change language');
         document.getElementById('copyright-year').textContent = String(new Date().getFullYear());
         currentLanguage = language;

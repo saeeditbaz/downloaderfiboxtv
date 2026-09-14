@@ -131,7 +131,7 @@ window.onfiboxTranslations = {
     "number2": "3",
     "title": "onFiBOX | Cast from your phone to your TV",
     "meta": "Download onFiBOX and connect your Android phone to your TV. Get the apps and follow the device pairing guide. Film and series viewing is available in Iran.",
-    "region": "Film and series viewing is available in Iran. Choosing a language does not change regional availability.",
+    "region": "",
     "language": "English / فارسی"
   }
 };
