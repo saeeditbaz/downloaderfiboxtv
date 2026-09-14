@@ -9,10 +9,13 @@
     <link rel="icon" type="image/svg+xml" href="./images/onfibox/favicon.svg">
     <link rel="preload" href="./assets/fonts/Vazirmatn.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./assets/libs/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/onfibox-download.css">
+    <link rel="stylesheet" href="./assets/css/onfibox-download.css?v=20260914-i18n1">
+    <link rel="stylesheet" href="./assets/css/languages.css?v=20260914-i18n1">
+    <script>document.documentElement.classList.add("language-pending");</script>
 </head>
 <body>
-    <a class="skip-link" href="#downloads">رفتن به دانلود اپلیکیشن</a>
+    <div id="page-content">
+    <a class="skip-link" href="#downloads" data-i18n="skip">رفتن به دانلود اپلیکیشن</a>
     <svg xmlns="http://www.w3.org/2000/svg" class="icon-definitions" aria-hidden="true" focusable="false">
     <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 15v5h16v-5"/></symbol>
     <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M20 12H4m6-6-6 6 6 6"/></symbol>
@@ -27,54 +30,59 @@
 </svg>
     <header class="site-header">
         <div class="page-shell header-inner">
-            <a class="wordmark" href="#top" aria-label="onFiBOX، ابتدای صفحه" dir="ltr">on<span>FiBOX</span></a>
-            <nav class="main-nav" aria-label="ناوبری اصلی">
-                <a class="nav-download" href="#downloads">دانلود اپلیکیشن</a>
-                <a href="#television">اتصال تلویزیون</a>
+            <a class="wordmark" href="#top" aria-label="onFiBOX، ابتدای صفحه" data-i18n-aria-label="homeLabel" dir="ltr">on<span>FiBOX</span></a>
+            <nav class="main-nav" aria-label="ناوبری اصلی" data-i18n-aria-label="navLabel">
+                <a class="nav-download" href="#downloads" data-i18n="download">دانلود اپلیکیشن</a>
+                <a href="#television" data-i18n="connectNav">اتصال تلویزیون</a>
             </nav>
+            <div class="header-actions">
+            <button type="button" class="language-trigger" id="change-language" aria-haspopup="dialog" aria-controls="language-dialog">English / فارسی</button>
             <button type="button" class="help-trigger" data-bs-toggle="modal" data-bs-target="#globalHelpModal">
-                <svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-book"></use></svg> <span class="help-desktop">راهنمای استفاده</span><span class="help-mobile">راهنما</span>
+                <svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-book"></use></svg> <span class="help-desktop" data-i18n="help">راهنمای استفاده</span><span class="help-mobile" data-i18n="helpShort">راهنما</span>
             </button>
+            </div>
         </div>
     </header>
     <main class="page-shell" id="top">
         <section class="hero" aria-labelledby="hero-title">
             <div class="hero-copy">
-                <p class="eyebrow">اپلیکیشن <bdi>onFiBOX</bdi></p>
-                <h1 id="hero-title">سینمای شما،<span>روی هر صفحه</span></h1>
-                <p class="hero-description">روی موبایل و کامپیوتر تماشا کنید؛<br class="mobile-break"> به تلویزیون وصل شوید.</p>
+                <p class="eyebrow" data-i18n="eyebrow">اپلیکیشن <bdi>onFiBOX</bdi></p>
+                <h1 id="hero-title" data-i18n="hero">سینمای شما،<span>روی هر صفحه</span></h1>
+                <p class="hero-description" data-i18n="description">روی موبایل و کامپیوتر تماشا کنید؛<br class="mobile-break"> به تلویزیون وصل شوید.</p>
             </div>
             <picture class="hero-art">
                 <source type="image/webp" srcset="./images/onfibox/cinema-devices-640.webp 640w, ./images/onfibox/cinema-devices-960.webp 960w, ./images/onfibox/cinema-devices-1536.webp 1536w" sizes="(max-width: 700px) calc(100vw - 24px), (max-width: 1100px) 52vw, 730px">
-                <img src="./images/onfibox/cinema-devices.jpg" width="1536" height="1024" alt="نمایش onFiBOX روی تلویزیون و موبایل با تصویری سینمایی از یک سیاره و کویر" fetchpriority="high" decoding="async">
+                <img src="./images/onfibox/cinema-devices.jpg" width="1536" height="1024" alt="نمایش onFiBOX روی تلویزیون و موبایل با تصویری سینمایی از یک سیاره و کویر" data-i18n-alt="artAlt" fetchpriority="high" decoding="async">
             </picture>
         </section>
 
+        <p class="region-note" data-i18n="region">فیلم و سریال برای کاربران ایران ارائه می‌شود. انتخاب زبان، منطقهٔ دسترسی شما را تغییر نمی‌دهد.</p>
+
         <section class="download-section" id="downloads" aria-labelledby="download-title">
             <div class="section-heading">
-                <h2 id="download-title">دانلود اپلیکیشن</h2>
-                <p>نسخه مناسب دستگاهتان را انتخاب کنید</p>
+                <h2 id="download-title" data-i18n="download">دانلود اپلیکیشن</h2>
+                <p data-i18n="chooseDevice">نسخه مناسب دستگاهتان را انتخاب کنید</p>
             </div>
             <div class="download-grid">
                 <article class="download-card" aria-labelledby="android-title">
                     <div class="platform-icon"><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-android"></use></svg></div>
                     <div class="download-copy">
-                        <div class="platform-heading"><h3 id="android-title" dir="ltr">Android</h3><span class="primary-badge">نسخه اصلی</span></div>
-                        <p>تماشای فیلم و سریال و مدیریت دستگاه‌ها</p>
+                        <div class="platform-heading"><h3 id="android-title" dir="ltr">Android</h3><span class="primary-badge" data-i18n="primary">نسخه اصلی</span></div>
+                        <p data-i18n="androidDescription">تماشای فیلم و سریال و مدیریت دستگاه‌ها</p>
                     </div>
                     <div class="download-actions">
-                        <a href="https://fiboxtv.top/downloads/onfibox.apk" class="action action-primary" download><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-download"></use></svg> <span>دانلود اندروید</span></a>
+                        <a href="https://fiboxtv.top/downloads/onfibox.apk" class="action action-primary" download><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-download"></use></svg> <span data-i18n="androidDownload">دانلود اندروید</span></a>
                     </div>
                 </article>
                 <article class="download-card" aria-labelledby="windows-title">
                     <div class="platform-icon windows-icon"><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-windows"></use></svg></div>
                     <div class="download-copy">
                         <div class="platform-heading"><h3 id="windows-title" dir="ltr">Windows</h3></div>
-                        <p>تماشای مستقیم روی کامپیوتر</p>
+                        <p data-i18n="windowsDescription">تماشای مستقیم روی کامپیوتر</p>
                     </div>
                     <div class="download-actions">
-                        <a href="https://fiboxtv.top/downloads/onFiBOX.exe" class="action action-primary" download><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-download"></use></svg> <span>دانلود برای ویندوز ۱۰ و بالاتر</span></a>
-                        <a href="https://fiboxtv.top/downloads/onFiBOX-Legacy.exe" class="legacy-download" download>نسخه ویندوز ۷ و ۸.۱</a>
+                        <a href="https://fiboxtv.top/downloads/onFiBOX.exe" class="action action-primary" download><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-download"></use></svg> <span data-i18n="windowsDownload">دانلود برای ویندوز ۱۰ و بالاتر</span></a>
+                        <a href="https://fiboxtv.top/downloads/onFiBOX-Legacy.exe" class="legacy-download" download data-i18n="legacy">نسخه ویندوز ۷ و ۸.۱</a>
                     </div>
                 </article>
             </div>
@@ -83,49 +91,49 @@
         <section class="tv-section" id="television" aria-labelledby="tv-title">
             <div class="tv-intro">
                 <div class="section-heading">
-                    <h2 id="tv-title">تماشا روی تلویزیون</h2>
-                    <p class="connection-note"><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-phone"></use></svg> <span>برای اتصال تلویزیون، اپلیکیشن اندروید لازم است</span></p>
+                    <h2 id="tv-title" data-i18n="tvTitle">تماشا روی تلویزیون</h2>
+                    <p class="connection-note"><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-phone"></use></svg> <span data-i18n="androidRequired">برای اتصال تلویزیون، اپلیکیشن اندروید لازم است</span></p>
                 </div>
-                <ol class="connection-steps" aria-label="مراحل اتصال تلویزیون">
-                    <li><span class="step-number" aria-hidden="true">۱</span><div><span>نصب اپ اندروید</span><p>اپلیکیشن onFiBOX را روی گوشی یا تبلت اندرویدی نصب کنید.</p></div><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg></li>
-                    <li><span class="step-number" aria-hidden="true">۲</span><div><span>باز کردن پخش‌کننده تلویزیون</span><p>یکی از روش‌های اتصال تلویزیون را انتخاب کنید و کد دستگاه را ببینید.</p></div><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg></li>
-                    <li><span class="step-number" aria-hidden="true">۳</span><div><span>اتصال از داخل اپ</span><p>کد دستگاه را در بخش اتصال TV وارد کنید و تماشا را شروع کنید.</p></div></li>
+                <ol class="connection-steps" aria-label="مراحل اتصال تلویزیون" data-i18n-aria-label="stepsLabel">
+                    <li><span class="step-number" aria-hidden="true" data-i18n="number0">۱</span><div><span data-i18n="step1">نصب اپ اندروید</span><p data-i18n="step1Description">اپلیکیشن onFiBOX را روی گوشی یا تبلت اندرویدی نصب کنید.</p></div><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg></li>
+                    <li><span class="step-number" aria-hidden="true" data-i18n="number1">۲</span><div><span data-i18n="step2">باز کردن پخش‌کننده تلویزیون</span><p data-i18n="step2Description">یکی از روش‌های اتصال تلویزیون را انتخاب کنید و کد دستگاه را ببینید.</p></div><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg></li>
+                    <li><span class="step-number" aria-hidden="true" data-i18n="number2">۳</span><div><span data-i18n="step3">اتصال از داخل اپ</span><p data-i18n="step3Description">کد دستگاه را در بخش اتصال TV وارد کنید و تماشا را شروع کنید.</p></div></li>
                 </ol>
             </div>
             <div class="tv-grid">
                 <article class="tv-card" aria-labelledby="browser-title">
                     <svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-globe"></use></svg>
-                    <h3 id="browser-title">مرورگر تلویزیون</h3>
-                    <p class="tv-description">اتصال از مرورگر تلویزیون</p>
-                    <button type="button" class="action action-outline" data-bs-toggle="modal" data-bs-target="#globalHelpModal">راهنمای اتصال</button>
+                    <h3 id="browser-title" data-i18n="browser">مرورگر تلویزیون</h3>
+                    <p class="tv-description" data-i18n="browserDescription">اتصال از مرورگر تلویزیون</p>
+                    <button type="button" class="action action-outline" data-bs-toggle="modal" data-bs-target="#globalHelpModal" data-i18n="connectionHelp">راهنمای اتصال</button>
                 </article>
                 <article class="tv-card" aria-labelledby="android-tv-title">
                     <svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-tv"></use></svg>
                     <h3 id="android-tv-title" dir="ltr">Android TV</h3>
-                    <p class="tv-description">پخش‌کننده متصل به اپلیکیشن</p>
-                    <a href="https://fiboxtv.top/downloads/onfiboxtv.apk" class="action action-outline" download>دانلود پخش‌کننده</a>
+                    <p class="tv-description" data-i18n="playerDescription">پخش‌کننده متصل به اپلیکیشن</p>
+                    <a href="https://fiboxtv.top/downloads/onfiboxtv.apk" class="action action-outline" download data-i18n="playerDownload">دانلود پخش‌کننده</a>
                 </article>
                 <article class="tv-card upcoming-card" aria-labelledby="lg-title">
                     <svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-tv"></use></svg>
                     <h3 id="lg-title" dir="ltr">LG TV</h3>
                     <p class="platform-system" dir="ltr">WebOS</p>
-                    <p class="coming-soon"><span class="status-divider" aria-hidden="true"></span><span class="coming-copy"><span>به‌زودی</span> <span>منتشر می‌شود</span></span></p>
+                    <p class="coming-soon"><span class="status-divider" aria-hidden="true"></span><span class="coming-copy"><span data-i18n="soon">به‌زودی</span> <span data-i18n="released">منتشر می‌شود</span></span></p>
                 </article>
                 <article class="tv-card upcoming-card" aria-labelledby="samsung-title">
                     <svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-tv"></use></svg>
                     <h3 id="samsung-title" dir="ltr">SAMSUNG TV</h3>
                     <p class="platform-system" dir="ltr">Tizen</p>
-                    <p class="coming-soon"><span class="status-divider" aria-hidden="true"></span><span class="coming-copy"><span>به‌زودی</span> <span>منتشر می‌شود</span></span></p>
+                    <p class="coming-soon"><span class="status-divider" aria-hidden="true"></span><span class="coming-copy"><span data-i18n="soon">به‌زودی</span> <span data-i18n="released">منتشر می‌شود</span></span></p>
                 </article>
             </div>
         </section>
     </main>
     <footer class="site-footer">
         <div class="page-shell footer-inner">
-            <p><bdi>© <span id="copyright-year">2026</span> onFiBOX</bdi><span class="copyright-detail"> · تمام حقوق محفوظ است</span></p>
+            <p><bdi>© <span id="copyright-year">2026</span> onFiBOX</bdi><span class="copyright-detail" data-i18n="copyright"> · تمام حقوق محفوظ است</span></p>
             <div class="social-links">
-                <a href="https://t.me/onfibox" target="_blank" rel="noopener noreferrer" aria-label="تلگرام onFiBOX"><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-telegram"></use></svg></a>
-                <a href="https://instagram.com/onfibox.app" target="_blank" rel="noopener noreferrer" aria-label="اینستاگرام onFiBOX"><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-instagram"></use></svg></a>
+                <a href="https://t.me/onfibox" target="_blank" rel="noopener noreferrer" aria-label="تلگرام onFiBOX" data-i18n-aria-label="telegram"><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-telegram"></use></svg></a>
+                <a href="https://instagram.com/onfibox.app" target="_blank" rel="noopener noreferrer" aria-label="اینستاگرام onFiBOX" data-i18n-aria-label="instagram"><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-instagram"></use></svg></a>
             </div>
         </div>
     </footer>
@@ -133,58 +141,72 @@
     <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title fw-bold w-100 text-center" id="globalHelpModalLabel">
+          <h5 class="modal-title fw-bold w-100 text-center" id="globalHelpModalLabel" data-i18n="guideTitle">
             راهنمای کلی استفاده از نسخه‌های مختلف onFiBOX
           </h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="بستن راهنما"></button>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="بستن راهنما" data-i18n-aria-label="closeHelp"></button>
         </div>
 
         <div class="modal-body">
-          <h6 class="fw-bold text-primary">📱 اپلیکیشن اندروید</h6>
+          <h6 class="fw-bold text-primary" data-i18n="guideAndroid">📱 اپلیکیشن اندروید</h6>
           <ul class="mb-4">
-            <li>نصب روی گوشی‌های اندرویدی</li>
-            <li>امکان تماشای مستقیم فیلم و سریال روی خود گوشی</li>
-            <li>قابلیت مدیریت و اتصال به دستگاه‌های دیگر</li>
-            <li>برای اتصال، وارد بخش <strong>اتصال TV</strong> در اپلیکیشن شوید و کد دستگاه مقصد را وارد کنید</li>
+            <li data-i18n="guideInstall">نصب روی گوشی‌های اندرویدی</li>
+            <li data-i18n="guideWatch">امکان تماشای مستقیم فیلم و سریال روی خود گوشی</li>
+            <li data-i18n="guideManage">قابلیت مدیریت و اتصال به دستگاه‌های دیگر</li>
+            <li data-i18n="guidePair">برای اتصال، وارد بخش <strong>اتصال TV</strong> در اپلیکیشن شوید و کد دستگاه مقصد را وارد کنید</li>
           </ul>
 
-          <h6 class="fw-bold text-primary">💻 نسخه ویندوز</h6>
+          <h6 class="fw-bold text-primary" data-i18n="guideWindows">💻 نسخه ویندوز</h6>
           <ul class="mb-4">
-            <li>نسخه مستقل برای تماشای مستقیم فیلم و سریال</li>
-            <li>بدون نیاز به اتصال به گوشی برای استفاده عادی</li>
-            <li>در صورت پشتیبانی، می‌تواند برای مدیریت یا اتصال به برخی پخش‌کننده‌ها نیز استفاده شود</li>
+            <li data-i18n="guideWindowsWatch">نسخه مستقل برای تماشای مستقیم فیلم و سریال</li>
+            <li data-i18n="guideWindowsPhone">بدون نیاز به اتصال به گوشی برای استفاده عادی</li>
+            <li data-i18n="guideWindowsPair">در صورت پشتیبانی، می‌تواند برای مدیریت یا اتصال به برخی پخش‌کننده‌ها نیز استفاده شود</li>
           </ul>
 
           <h6 class="fw-bold text-primary">📺 Android TV</h6>
           <ul class="mb-4">
-            <li>به‌عنوان پخش‌کننده استفاده می‌شود</li>
-            <li>پس از نصب، کد اتصال نمایش داده می‌شود</li>
-            <li>با وارد کردن کد در اپ اندروید یا نسخه‌های مدیریتی، پخش روی دستگاه انجام می‌شود</li>
+            <li data-i18n="guidePlayer">به‌عنوان پخش‌کننده استفاده می‌شود</li>
+            <li data-i18n="guideCode">پس از نصب، کد اتصال نمایش داده می‌شود</li>
+            <li data-i18n="guideEnterCode">با وارد کردن کد در اپ اندروید یا نسخه‌های مدیریتی، پخش روی دستگاه انجام می‌شود</li>
           </ul>
 
-          <h6 class="fw-bold text-primary">🌐 مرورگر تلویزیون هوشمند</h6>
+          <h6 class="fw-bold text-primary" data-i18n="guideBrowser">🌐 مرورگر تلویزیون هوشمند</h6>
           <ul class="mb-4">
-            <li>در مرورگر تلویزیون، آدرس زیر را وارد کنید:</li>
+            <li data-i18n="guideAddress">در مرورگر تلویزیون، آدرس زیر را وارد کنید:</li>
             <li class="help-address text-center border rounded p-2 my-3">
               <code dir="ltr">fiboxtv.top</code>
             </li>
-            <li>صفحه‌ای باز می‌شود که کد اتصال نمایش می‌دهد</li>
-            <li>کد را در بخش <strong>اتصال TV</strong> وارد کنید</li>
-            <li>پس از اتصال، محتوای انتخابی روی تلویزیون پخش خواهد شد</li>
+            <li data-i18n="guideCodePage">صفحه‌ای باز می‌شود که کد اتصال نمایش می‌دهد</li>
+            <li data-i18n="guideTVCode">کد را در بخش <strong>اتصال TV</strong> وارد کنید</li>
+            <li data-i18n="guidePlayback">پس از اتصال، محتوای انتخابی روی تلویزیون پخش خواهد شد</li>
           </ul>
 
-          <div class="alert text-center alert-info mt-4">
+          <div class="alert text-center alert-info mt-4" data-i18n="guideNote">
             🔒 <strong>توجه:</strong> اکنون نسخه‌های اصلی onFiBOX شامل اندروید و ویندوز هستند و نسخه‌های تلویزیونی به‌عنوان پخش‌کننده یا نسخه‌های تکمیلی ارائه می‌شوند.
           </div>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="close">بستن</button>
         </div>
       </div>
     </div>
   </div>
+    </div>
+    <dialog id="language-dialog" aria-labelledby="language-title" aria-describedby="language-description" dir="ltr">
+        <div class="language-panel">
+            <p class="wordmark" aria-label="onFiBOX">on<span>FiBOX</span></p>
+            <h1 id="language-title"><span lang="en">Choose your language</span><span lang="fa" dir="rtl">زبان خود را انتخاب کنید</span></h1>
+            <p id="language-description"><span lang="en">You can change it anytime.</span><span lang="fa" dir="rtl">هر زمان می‌توانید زبان را تغییر دهید.</span></p>
+            <div class="language-options">
+                <button type="button" data-language="en" lang="en" dir="ltr">English <span aria-hidden="true">→</span></button>
+                <button type="button" data-language="fa" lang="fa" dir="rtl">فارسی <span aria-hidden="true">←</span></button>
+            </div>
+        </div>
+    </dialog>
+    <noscript><p class="page-shell">برای انتخاب زبان، جاوااسکریپت مرورگر را فعال کنید. <span lang="en" dir="ltr">Enable JavaScript to choose English or Persian.</span></p></noscript>
     <script src="./assets/libs/js/bootstrap.bundle.min.js" defer></script>
-    <script src="./assets/js/site.js" defer></script>
+    <script src="./assets/js/translations.js?v=20260914-i18n1" defer></script>
+    <script src="./assets/js/site.js?v=20260914-i18n1" defer></script>
 </body>
 </html>

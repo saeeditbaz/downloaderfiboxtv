@@ -1,0 +1,49 @@
+.language-pending #page-content { display: none; }
+.header-actions { display: flex; align-items: center; gap: 16px; }
+.language-trigger { background: transparent; color: var(--text); border: 1px solid var(--border); border-radius: 7px; padding: 8px 12px; min-height: 44px; white-space: nowrap; font-size: 14px; direction: ltr; }
+.language-trigger:hover { color: var(--accent); border-color: var(--accent); }
+.region-note { font-size: 13px; color: var(--muted); margin: 0 0 24px; line-height: 1.9; }
+#language-dialog { color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 0; width: min(520px, calc(100% - 32px)); max-height: calc(100dvh - 32px); margin: auto; }
+#language-dialog::backdrop { background: rgba(11, 13, 16, .96); }
+.language-panel { padding: 40px 32px; text-align: center; }
+.language-panel .wordmark { margin-bottom: 32px; }
+#language-title { font-size: clamp(23px, 5vw, 30px); line-height: 1.6; font-weight: 750; margin: 0; }
+#language-title span, #language-description span { display: block; }
+#language-title span + span { font-size: .85em; margin-top: 8px; }
+#language-description { color: var(--muted); font-size: 14px; margin: 18px 0 28px; line-height: 1.9; }
+.language-options { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.language-options button { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 58px; padding: 12px 20px; border: 1px solid var(--border); border-radius: 10px; background: #101317; color: var(--text); font-size: 18px; font-weight: 650; }
+.language-options button:hover { border-color: var(--accent); color: var(--accent); }
+.language-options button:focus-visible, .language-trigger:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+html[dir="ltr"] .connection-steps .icon { left: auto; right: -20px; transform: rotate(180deg); }
+html[dir="ltr"] .hero h1 { font-size: clamp(40px, 4.3vw, 64px); line-height: 1.25; }
+html[dir="ltr"] .hero-description { line-height: 1.7; }
+html[dir="ltr"] .download-actions .action { white-space: normal; height: auto; min-height: 44px; }
+@media (max-width: 1100px) and (min-width: 701px) {
+    .header-inner { gap: 14px; }
+    .header-actions { gap: 10px; }
+    .main-nav { gap: 20px; }
+    .help-desktop { display: none; }
+    .help-mobile { display: inline; }
+}
+@media (max-width: 700px) {
+    .header-inner { gap: 10px; flex-wrap: wrap; padding-block: 14px; }
+    .header-actions { gap: 12px; }
+    .language-trigger { font-size: 12px; padding: 6px 8px; }
+    .header-actions .help-trigger { font-size: 13px; gap: 4px; }
+    .header-actions .help-trigger .icon { width: 18px; height: 18px; }
+    .wordmark { font-size: 30px; }
+    .region-note { text-align: center; margin-block: 8px 24px; font-size: 12px; }
+    html[dir="ltr"] .hero h1 { font-size: 42px; }
+    html[dir="ltr"] .hero-description { font-size: 16px; }
+    html[dir="ltr"] .connection-steps li > div > span { font-size: 15px; }
+    html[dir="ltr"] .tv-card h3 { font-size: 23px; }
+    html[dir="ltr"] .tv-card .action { font-size: 13px; white-space: normal; }
+    .language-panel { padding: 32px 20px; }
+    .language-options button { padding-inline: 14px; }
+}
+@media (max-width: 370px) {
+    .header-inner > .wordmark { font-size: 26px; }
+    .header-actions { gap: 8px; }
+    .header-actions .help-trigger .icon { display: none; }
+}
