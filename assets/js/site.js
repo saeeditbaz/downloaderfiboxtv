@@ -20,13 +20,13 @@
         document.querySelectorAll('[data-i18n]').forEach(element => {
             // Markup comes only from the bundled, maintained translation dictionary.
             element.innerHTML = messages[element.dataset.i18n];
+            element.hidden = !messages[element.dataset.i18n];
         });
         ['aria-label', 'alt'].forEach(attribute => {
             document.querySelectorAll(`[data-i18n-${attribute}]`).forEach(element => {
                 element.setAttribute(attribute, messages[element.getAttribute(`data-i18n-${attribute}`)]);
             });
         });
-        document.querySelector('.region-note').hidden = !messages.region;
         changeButton.setAttribute('aria-label', language === 'fa' ? 'تغییر زبان' : 'Change language');
         document.getElementById('copyright-year').textContent = String(new Date().getFullYear());
         currentLanguage = language;

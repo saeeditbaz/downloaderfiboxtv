@@ -89,7 +89,7 @@ window.onfiboxTranslations = {
     "guideTitle": "Getting started with onFiBOX",
     "guideAndroid": "📱 Android app",
     "guideInstall": "Install the app on an Android phone.",
-    "guideWatch": "Film and series viewing on your phone is available in Iran.",
+    "guideWatch": "",
     "guideManage": "Connect to and manage supported devices.",
     "guidePair": "Open <strong>TV connection</strong> in the app and enter the code shown on your TV.",
     "guideWindows": "💻 Windows app",
@@ -99,7 +99,7 @@ window.onfiboxTranslations = {
     "guidePlayer": "Works as a player for your TV.",
     "guideCode": "Open the installed player to see your connection code.",
     "guideEnterCode": "Enter the code in the Android app or a supported controller app to play on your TV.",
-    "guideNote": "<strong>Note:</strong> Android and Windows are the main onFiBOX apps. TV versions are companion players. Feature availability depends on your region and app version.",
+    "guideNote": "<strong>Note:</strong> Android and Windows are the main onFiBOX apps. TV versions are companion players.",
     "close": "Close",
     "homeLabel": "onFiBOX, back to top",
     "navLabel": "Main navigation",
@@ -112,7 +112,7 @@ window.onfiboxTranslations = {
     "number1": "2",
     "number2": "3",
     "title": "onFiBOX | Cast from your phone to your TV",
-    "meta": "Download onFiBOX and connect your Android phone to your TV. Get the apps and follow the device pairing guide. Film and series viewing is available in Iran.",
+    "meta": "Download onFiBOX and connect your Android phone to your TV. Get the apps and follow the device pairing guide.",
     "region": "",
     "language": "English / فارسی"
   }
