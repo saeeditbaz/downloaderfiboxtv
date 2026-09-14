@@ -120,8 +120,8 @@ window.onfiboxTranslations = {
     "region": "",
     "language": "English / فارسی",
     "androidModalTitle": "Download for Android",
-    "vpnTitle": "Turn off your VPN",
-    "vpnDescription": "Turn off your VPN before downloading and using the app.",
+    "vpnTitle": "",
+    "vpnDescription": "",
     "androidConfirmDownload": "Download for Android"
   }
 };

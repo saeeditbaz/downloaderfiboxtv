@@ -28,6 +28,17 @@
             });
         });
         changeButton.setAttribute('aria-label', language === 'fa' ? 'تغییر زبان' : 'Change language');
+        const androidDownload = document.getElementById('android-download-trigger');
+        if (language === 'fa') {
+            androidDownload.setAttribute('data-bs-toggle', 'modal');
+            androidDownload.setAttribute('data-bs-target', '#androidDownloadModal');
+            androidDownload.setAttribute('aria-haspopup', 'dialog');
+            androidDownload.setAttribute('aria-controls', 'androidDownloadModal');
+            androidDownload.removeAttribute('download');
+        } else {
+            ['data-bs-toggle', 'data-bs-target', 'aria-haspopup', 'aria-controls'].forEach(attribute => androidDownload.removeAttribute(attribute));
+            androidDownload.setAttribute('download', '');
+        }
         document.getElementById('copyright-year').textContent = String(new Date().getFullYear());
         currentLanguage = language;
         document.documentElement.classList.remove('language-pending');
