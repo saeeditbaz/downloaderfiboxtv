@@ -69,7 +69,7 @@ window.onfiboxTranslations = {
     "description": "Connect your Android phone to your TV.<br class=\"mobile-break\"> Enjoy your content on a bigger screen.",
     "chooseDevice": "Choose the version for your device",
     "primary": "Main app",
-    "androidDescription": "Cast from your phone and manage connected devices",
+    "androidDescription": "Cast from your phone",
     "androidDownload": "Download for Android",
     "windowsDescription": "Cast videos from your PC to your TV",
     "windowsDownload": "Download for Windows 10+",
