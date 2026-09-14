@@ -9,8 +9,8 @@
     <link rel="icon" type="image/svg+xml" href="./images/onfibox/favicon.svg">
     <link rel="preload" href="./assets/fonts/Vazirmatn.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./assets/libs/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/onfibox-download.css?v=20260914-i18n1">
-    <link rel="stylesheet" href="./assets/css/languages.css?v=20260914-i18n1">
+    <link rel="stylesheet" href="./assets/css/onfibox-download.css?v=20260914-tvapps1">
+    <link rel="stylesheet" href="./assets/css/languages.css?v=20260914-tvapps1">
     <script>document.documentElement.classList.add("language-pending");</script>
 </head>
 <body>
@@ -22,7 +22,6 @@
     <symbol id="icon-book" viewBox="0 0 24 24"><path d="M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Zm0 0v15"/></symbol>
     <symbol id="icon-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 5h4m-3 14h2"/></symbol>
     <symbol id="icon-tv" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx=".6"/><path d="M8 21h8m-7-4-1 4m7-4 1 4"/></symbol>
-    <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4.5" ry="10"/><path d="M2 12h20M4 6h16M4 18h16"/></symbol>
     <symbol id="icon-windows" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M2 4.8 10.7 3.6v8H2Zm9.7-1.4L22 2v9.6H11.7ZM2 12.6h8.7v8L2 19.4Zm9.7 0H22V22l-10.3-1.4Z"/></symbol>
     <symbol id="icon-android" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path d="M5 9h14v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1Zm0-1a7 7 0 0 1 14 0Z"/><rect x="1.5" y="9" width="2.5" height="8" rx="1.25"/><rect x="20" y="9" width="2.5" height="8" rx="1.25"/><rect x="7" y="17" width="3" height="6" rx="1.5"/><rect x="14" y="17" width="3" height="6" rx="1.5"/></g><path d="m7 3-1-2m11 2 1-2"/><g fill="var(--surface)" stroke="none"><circle cx="9" cy="5.5" r=".75"/><circle cx="15" cy="5.5" r=".75"/></g></symbol>
     <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></symbol>
@@ -96,17 +95,11 @@
                 </div>
                 <ol class="connection-steps" aria-label="مراحل اتصال تلویزیون" data-i18n-aria-label="stepsLabel">
                     <li><span class="step-number" aria-hidden="true" data-i18n="number0">۱</span><div><span data-i18n="step1">نصب اپ اندروید</span><p data-i18n="step1Description">اپلیکیشن onFiBOX را روی گوشی یا تبلت اندرویدی نصب کنید.</p></div><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg></li>
-                    <li><span class="step-number" aria-hidden="true" data-i18n="number1">۲</span><div><span data-i18n="step2">باز کردن پخش‌کننده تلویزیون</span><p data-i18n="step2Description">یکی از روش‌های اتصال تلویزیون را انتخاب کنید و کد دستگاه را ببینید.</p></div><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg></li>
+                    <li><span class="step-number" aria-hidden="true" data-i18n="number1">۲</span><div><span data-i18n="step2">باز کردن پخش‌کننده تلویزیون</span><p data-i18n="step2Description">اپلیکیشن پخش‌کننده را روی تلویزیون باز کنید و کد اتصال را ببینید.</p></div><svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-arrow"></use></svg></li>
                     <li><span class="step-number" aria-hidden="true" data-i18n="number2">۳</span><div><span data-i18n="step3">اتصال از داخل اپ</span><p data-i18n="step3Description">کد دستگاه را در بخش اتصال TV وارد کنید و تماشا را شروع کنید.</p></div></li>
                 </ol>
             </div>
             <div class="tv-grid">
-                <article class="tv-card" aria-labelledby="browser-title">
-                    <svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-globe"></use></svg>
-                    <h3 id="browser-title" data-i18n="browser">مرورگر تلویزیون</h3>
-                    <p class="tv-description" data-i18n="browserDescription">اتصال از مرورگر تلویزیون</p>
-                    <button type="button" class="action action-outline" data-bs-toggle="modal" data-bs-target="#globalHelpModal" data-i18n="connectionHelp">راهنمای اتصال</button>
-                </article>
                 <article class="tv-card" aria-labelledby="android-tv-title">
                     <svg class="icon " aria-hidden="true" focusable="false"><use href="#icon-tv"></use></svg>
                     <h3 id="android-tv-title" dir="ltr">Android TV</h3>
@@ -170,17 +163,6 @@
             <li data-i18n="guideEnterCode">با وارد کردن کد در اپ اندروید یا نسخه‌های مدیریتی، پخش روی دستگاه انجام می‌شود</li>
           </ul>
 
-          <h6 class="fw-bold text-primary" data-i18n="guideBrowser">🌐 مرورگر تلویزیون هوشمند</h6>
-          <ul class="mb-4">
-            <li data-i18n="guideAddress">در مرورگر تلویزیون، آدرس زیر را وارد کنید:</li>
-            <li class="help-address text-center border rounded p-2 my-3">
-              <code dir="ltr">fiboxtv.top</code>
-            </li>
-            <li data-i18n="guideCodePage">صفحه‌ای باز می‌شود که کد اتصال نمایش می‌دهد</li>
-            <li data-i18n="guideTVCode">کد را در بخش <strong>اتصال TV</strong> وارد کنید</li>
-            <li data-i18n="guidePlayback">پس از اتصال، محتوای انتخابی روی تلویزیون پخش خواهد شد</li>
-          </ul>
-
           <div class="alert text-center alert-info mt-4" data-i18n="guideNote">
             🔒 <strong>توجه:</strong> اکنون نسخه‌های اصلی onFiBOX شامل اندروید و ویندوز هستند و نسخه‌های تلویزیونی به‌عنوان پخش‌کننده یا نسخه‌های تکمیلی ارائه می‌شوند.
           </div>
@@ -206,7 +188,7 @@
     </dialog>
     <noscript><p class="page-shell">برای انتخاب زبان، جاوااسکریپت مرورگر را فعال کنید. <span lang="en" dir="ltr">Enable JavaScript to choose English or Persian.</span></p></noscript>
     <script src="./assets/libs/js/bootstrap.bundle.min.js" defer></script>
-    <script src="./assets/js/translations.js?v=20260914-i18n2" defer></script>
-    <script src="./assets/js/site.js?v=20260914-i18n2" defer></script>
+    <script src="./assets/js/translations.js?v=20260914-tvapps1" defer></script>
+    <script src="./assets/js/site.js?v=20260914-tvapps1" defer></script>
 </body>
 </html>

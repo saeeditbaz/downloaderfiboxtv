@@ -481,7 +481,7 @@ h3[dir=ltr],.wordmark {
 .tv-grid {
     display:grid;
     grid-auto-rows:1fr;
-    grid-template-columns:repeat(4,minmax(0,1fr));
+    grid-template-columns:repeat(3,minmax(0,1fr));
     gap:18px;
 }
 
@@ -1001,6 +1001,9 @@ h3[dir=ltr],.wordmark {
     .tv-grid {
         grid-template-columns:repeat(2,minmax(0,1fr));
         gap:12px;
+    }
+    .tv-grid > .tv-card:first-child {
+        grid-column:1 / -1;
     }
     .tv-card {
         border-radius:14px;
