@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "release_tag": "downloads-2026-09-15",
+  "apps": {
+    "android": {
+      "version": "1.6.5",
+      "asset": "onfibox.apk",
+      "sha256": "74fc854e3086fc3ccfcb72b640b7051253399836f054e75106f28529feb52c58",
+      "release_notes": {
+        "fa": "کنترلر یکپارچهٔ My PC و My phone، راهنمای تازهٔ اتصال PC و ورود گوگل، تصویر حساب و نمایش وضعیت ورود و خروج.",
+        "en": ""
+      },
+      "version_code": 26
+    },
+    "android_tv": {
+      "version": "1.0.8",
+      "asset": "onfiboxtv.apk",
+      "sha256": "de514aa354f26906206b2cf305a3cd65b117a3b72dc2d30a8d7e7070e7adc091",
+      "release_notes": {
+        "fa": "نسخهٔ امضاشدهٔ Android TV ۱.۰.۸؛ این فایل نسبت به انتشار قبلی تغییری نکرده است.",
+        "en": ""
+      },
+      "version_code": 9
+    },
+    "pc_cast": {
+      "version": "1.4.8",
+      "asset": "onFiBOX_PC_Cast.exe",
+      "sha256": "3b8cac896e0045435b2e71d525e38a605a76bcbb76412b8798c874ca921bc54e",
+      "release_notes": {
+        "fa": "پخش دوباره پس از توقف، تصویر حساب کنار خروج، آماده‌سازی زیرنویس و اطلاعات هنگام ارسال از گوشی و بهبود پایداری انتقال شبکه. پیش از اجرا، نسخهٔ قبلی را از منوی کنار ساعت کاملاً ببندید.",
+        "en": ""
+      },
+      "minimum_version": "1.0.0"
+    }
+  }
+}
