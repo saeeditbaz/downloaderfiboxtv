@@ -1151,3 +1151,10 @@ h3[dir=ltr],.wordmark {
         transition:none!important;
     }
 }
+
+.faq-section { margin-block: 48px; }
+.faq-section h2 { margin-bottom: 24px; }
+.faq-section details { padding-block: 18px; border-bottom: 1px solid var(--border); }
+.faq-section summary { cursor: pointer; font-weight: 700; }
+.faq-section summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.faq-section details p { color: var(--muted); margin-top: 12px; line-height: 1.9; }
