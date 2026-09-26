@@ -41,7 +41,6 @@
         }
         document.getElementById('copyright-year').textContent = String(new Date().getFullYear());
         currentLanguage = language;
-        document.documentElement.classList.remove('language-pending');
     }
 
     function chooseLanguage(language) {
@@ -73,10 +72,6 @@
     } catch {
         savedLanguage = null;
     }
-    if (isSupported(savedLanguage)) {
-        applyLanguage(savedLanguage);
-    } else {
-        dialog.showModal();
-        dialog.querySelector('[data-language="en"]').focus();
-    }
+    // The same useful default content is visible to visitors and crawlers.
+    applyLanguage(isSupported(savedLanguage) ? savedLanguage : 'fa');
 })();
